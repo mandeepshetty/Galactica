@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rowItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/movieSearchResultListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/wetAsphalt">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="80dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/poster"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/addRemove"
+            android:layout_width="56sp"
+            android:layout_height="56sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6sp"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/colorAccent"
+            android:textSize="35sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/discoveredPeopleListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/wetAsphalt">
+
+        <TextView
+            android:id="@+id/discoveredName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:text="Mandeep"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="23"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

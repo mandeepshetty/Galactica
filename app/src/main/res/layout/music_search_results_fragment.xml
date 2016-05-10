@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".music.MusicSearchResultsFragment">
+
+    <ImageView
+        android:id="@+id/artistPoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="400dp"
+        android:adjustViewBounds="true"
+        android:layout_marginEnd="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artistPoster"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artistName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/decades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/addRemoveArtist"
+        android:layout_width="56sp"
+        android:layout_height="56sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6sp"
+        android:layout_marginBottom="6sp"
+        android:background="@drawable/roundedbutton"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/noResultsFoundGroupMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/noSearchResultsFound1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_search_results1"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/noSearchResultsFound2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_search_results2"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+</RelativeLayout>
